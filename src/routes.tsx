@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { App } from './App'
+import { Dashboard } from './pages/app/dashboard'
+import { SingIn } from './pages/auth/sing-in'
 import { AppLayout } from './pages/layout/app'
 import { AuthLayout } from './pages/layout/auth'
 
@@ -10,7 +11,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <App />,
+        element: <Dashboard />,
       },
     ],
   },
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/sing-in',
-        element: <App />,
+        element: <SingIn />,
       },
     ],
   },
